@@ -1,14 +1,20 @@
 # Python program to convert 
 # JSON file to CSV 
   
-  
 import json 
 import csv 
-  
+import sys
+
+try:
+    ror_file = sys.argv[1]
+except:
+    print ('Enter the name of the file you want to parse. e.g. ror-parse.py ror.json')
+    sys.exit(1)  # abort
+
   
 # Opening JSON file and loading the data 
 # into the variable data 
-with open('ror.json') as json_file: 
+with open(ror_file) as json_file: 
     ror_data = json.load(json_file) 
   
 #ror_data = data[''] 

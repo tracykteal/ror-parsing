@@ -12,3 +12,8 @@ Current ROR JSON data can be downloaded from the github repository or FigShare
 ## Scripts
 
 - ror-parse.py - converts the JSON into csv
+
+## Data
+
+- ror_v6.json is the version 6 download from FigShare. This is the JSON file that can be parsed
+- ror_data_v6.csv is the output of the script, and the data in csv format
